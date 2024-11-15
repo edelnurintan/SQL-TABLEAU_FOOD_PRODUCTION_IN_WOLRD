@@ -77,7 +77,7 @@ ALTER COLUMN [Apples Production (tonnes)] FLOAT;
 ALTER TABLE food_production
 ALTER COLUMN [Palm oil Production (tonnes)] FLOAT;
 ```
-## MENGHITUNG RATA-RATA PRODUKSI PER KOMODITAS SESUAI NEGARA
+## Menghitung Rata-rata jumlah Produksi Tiap Komoditas Tertentu
 ``` sql
 SELECT 
     Entity,
@@ -111,7 +111,38 @@ Hasil tersebut dapat divisualisasikan dengan Tableau
 
 untuk melihiat keseluruhan visualisasi dapat dilihat di https://public.tableau.com/views/World_Food_Production/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
-
+## Menghitung Jumlah Produksi Tiap Komoditas Tertentu
+```sql
+SELECT 
+	Entity,
+	SUM([Maize Production (tonnes)]) AS SUM_Maize,
+    SUM([Rice Production ( tonnes)]) AS SUM_Rice,
+    SUM([Yams Production (tonnes)]) AS SUM_Yams,
+    SUM([Wheat Production (tonnes)]) AS SUM_Wheat,
+    SUM([Tomatoes Production (tonnes)]) AS SUM_Tomatoes,
+    SUM([Tea  Production ( tonnes )]) AS SUM_Tea,
+    SUM([Sweet potatoes Production (tonnes)]) AS SUM_SweetPotatoes,
+    SUM([Sunflower seed Production (tonnes)]) AS SUM_SunflowerSeed,
+    SUM([Sugar cane Production (tonnes)]) AS SUM_SugarCane,
+    SUM([Soybeans Production (tonnes)]) AS SUM_Soybeans,
+    SUM([Rye Production (tonnes)]) AS SUM_Rye,
+    SUM([Potatoes Production (tonnes)]) AS SUM_Potatoes,
+    SUM([Oranges Production (tonnes)]) AS SUM_Oranges,
+    SUM([Peas dry Production ( tonnes)]) AS SUM_PeasDry,
+    SUM([Palm oil Production (tonnes)]) AS SUM_PalmOil,
+    SUM([Grapes Production (tonnes)]) AS SUM_Grapes,
+    SUM([Coffee green Production ( tonnes)]) AS SUM_CoffeeGreen,
+    SUM([Cocoa beans Production (tonnes)]) AS SUM_CocoaBeans,
+    SUM([Meat chicken Production (tonnes)]) AS SUM_MeatChicken,
+    SUM([Bananas Production ( tonnes)]) AS SUM_Bananas,
+    SUM([Avocados Production (tonnes)]) AS SUM_Avocados,
+    SUM([Apples Production (tonnes)]) AS SUM_Apples
+FROM food_production
+--WHERE 
+--	Entity IN ('Laos','Indonesia','Malaysia','Singapore','Thailand','Philippines','Vietnam','Cambodia','Myanmar') --jika ingin memilih hanya beberapa negara
+GROUP BY
+	Entity;
+```
 
 
 ## ANALISIS
