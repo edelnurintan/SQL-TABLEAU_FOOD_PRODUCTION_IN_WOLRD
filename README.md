@@ -107,4 +107,5 @@ FROM food_production
 GROUP BY Entity;
 ```
 Hasil tersebut dapat divisualisasikan dengan Tableau
-
+![rata-rata](https://github.com/edelnurintan/SQL-TABLEAU_FOOD_PRODUCTION_IN_WOLRD/blob/main/rata-rata.png)
+untuk melihiat keseluruhan visualisasi dapat dilihat di 
