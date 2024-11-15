@@ -63,7 +63,7 @@ ALTER TABLE food_production
 ALTER COLUMN [Cocoa beans Production (tonnes)] FLOAT;
 
 ALTER TABLE food_production
-ALTER COLUMN [Meat chicken Production (tonnes)"] FLOAT;
+ALTER COLUMN [Meat chicken Production (tonnes)] FLOAT;
 
 ALTER TABLE food_production
 ALTER COLUMN [Bananas Production ( tonnes)] FLOAT;
@@ -73,4 +73,36 @@ ALTER COLUMN [Avocados Production (tonnes)] FLOAT;
 
 ALTER TABLE food_production
 ALTER COLUMN [Apples Production (tonnes)] FLOAT;
+
+ALTER TABLE food_production
+ALTER COLUMN [Palm oil Production (tonnes)] FLOAT;
+```
+## MENGHITUNG RATA-RATA PRODUKSI PER KOMODITAS SESUAI NEGARA
+``` sql
+SELECT 
+    Entity,
+    AVG([Maize Production (tonnes)]) AS Avg_Maize,
+    AVG([Rice Production ( tonnes)]) AS Avg_Rice,
+    AVG([Yams Production (tonnes)]) AS Avg_Yams,
+    AVG([Wheat Production (tonnes)]) AS Avg_Wheat,
+    AVG([Tomatoes Production (tonnes)]) AS Avg_Tomatoes,
+    AVG([Tea  Production ( tonnes )]) AS Avg_Tea,
+    AVG([Sweet potatoes Production (tonnes)]) AS Avg_SweetPotatoes,
+    AVG([Sunflower seed Production (tonnes)]) AS Avg_SunflowerSeed,
+    AVG([Sugar cane Production (tonnes)]) AS Avg_SugarCane,
+    AVG([Soybeans Production (tonnes)]) AS Avg_Soybeans,
+    AVG([Rye Production (tonnes)]) AS Avg_Rye,
+    AVG([Potatoes Production (tonnes)]) AS Avg_Potatoes,
+    AVG([Oranges Production (tonnes)]) AS Avg_Oranges,
+    AVG([Peas dry Production ( tonnes)]) AS Avg_PeasDry,
+    AVG([Palm oil Production (tonnes)]) AS Avg_PalmOil,
+    AVG([Grapes Production (tonnes)]) AS Avg_Grapes,
+    AVG([Coffee green Production ( tonnes)]) AS Avg_CoffeeGreen,
+    AVG([Cocoa beans Production (tonnes)]) AS Avg_CocoaBeans,
+    AVG([Meat chicken Production (tonnes)"]) AS Avg_MeatChicken,
+    AVG([Bananas Production ( tonnes)]) AS Avg_Bananas,
+    AVG([Avocados Production (tonnes)]) AS Avg_Avocados,
+    AVG([Apples Production (tonnes)]) AS Avg_Apples
+FROM food_production
+GROUP BY Entity;
 ```
