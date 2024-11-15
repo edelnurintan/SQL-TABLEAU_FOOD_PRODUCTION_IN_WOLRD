@@ -108,4 +108,11 @@ GROUP BY Entity;
 ```
 Hasil tersebut dapat divisualisasikan dengan Tableau
 ![rata-rata](https://github.com/edelnurintan/SQL-TABLEAU_FOOD_PRODUCTION_IN_WOLRD/blob/main/rata-rata.png)
+
 untuk melihiat keseluruhan visualisasi dapat dilihat di https://public.tableau.com/views/World_Food_Production/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
+
+
+
+## ANALISIS
+- Pada rata-rata bahan produksi tiap komoditas, rata-rata produksi tertinggi yaitu pada komoditas Coffe Green yaitu negara Maaldives
