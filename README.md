@@ -99,10 +99,12 @@ SELECT
     AVG([Grapes Production (tonnes)]) AS Avg_Grapes,
     AVG([Coffee green Production ( tonnes)]) AS Avg_CoffeeGreen,
     AVG([Cocoa beans Production (tonnes)]) AS Avg_CocoaBeans,
-    AVG([Meat chicken Production (tonnes)"]) AS Avg_MeatChicken,
+    AVG([Meat chicken Production (tonnes)]) AS Avg_MeatChicken,
     AVG([Bananas Production ( tonnes)]) AS Avg_Bananas,
     AVG([Avocados Production (tonnes)]) AS Avg_Avocados,
     AVG([Apples Production (tonnes)]) AS Avg_Apples
 FROM food_production
 GROUP BY Entity;
 ```
+Hasil tersebut dapat divisualisasikan dengan Tableau
+
