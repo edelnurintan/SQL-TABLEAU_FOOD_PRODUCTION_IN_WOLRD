@@ -145,5 +145,21 @@ GROUP BY
 ```
 Hasil tersebut dapat divisualisasikan kedalam Tableau, seperti dibawah ini
 ![map](https://github.com/edelnurintan/SQL-TABLEAU_FOOD_PRODUCTION_IN_WOLRD/blob/main/jumlah.png)
+
+## Mengidentifikasi Pertumbuhan Produksi  Komoditas Tententu dan Negara Tertentu
+``` sql
+SELECT 
+	Year,Entity,
+	[Wheat Production (tonnes)] AS wheat_production -- bisa ditambah dengan komoditas lain
+FROM 
+	food_production
+WHERE 
+	Entity IN ('Afghanistan','Indonesia'); -- optional
+```
+
+![pertumbuhan](https://github.com/edelnurintan/SQL-TABLEAU_FOOD_PRODUCTION_IN_WOLRD/blob/main/pertumbuhan.png)
+
 ## ANALISIS
-- Pada rata-rata bahan produksi tiap komoditas, rata-rata produksi tertinggi yaitu pada komoditas Coffe Green yaitu negara Maaldives
+- Maroko (Morocco) menempati peringkat pertama dengan rata-rata produksi apel tertinggi, mencapai hampir 40 juta ton per tahun. (untuk hasil komoditas lain dapat dilihat pada link Tableau)
+- Maroko (Morocco) menempati posisi pertama sebagai negara dengan total produksi apel tertinggi, mencapai lebih dari 2,47 ton unit selama tahun 1961-2021
+- Secara keseluruhan, pertumbuhan produksi apel di Maroko menunjukkan tren kenaikan yang signifikan dari tahun 1961 hingga 1997.
