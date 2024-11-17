@@ -1,5 +1,14 @@
 # SQL-TABLEAU_FOOD_PRODUCTION_IN_WOLRD
-Proyek ini bertujuan untuk melakukan operasi CRUD (Create, Read, Update, Delete) pada dataset produksi bahan pangan global yang mencakup 226 negara menggunakan data dari tahun 1961 hingga 2023 dengan 22 jenis bahan pangan. SQL digunakan untuk mengelola dan memanipulasi data agar dapat menghasilkan analisis yang lebih akurat. Selain itu, Tableau digunakan untuk menciptakan visualisasi analitis yang memberikan wawasan lebih mendalam mengenai tren dan pola produksi pangan di berbagai negara sepanjang periode tersebut.
+Proyek ini bertujuan untuk melakukan analisis produksi bahan pangan global dengan menggunakan SQL untuk mengelola, membersihkan, dan menganalisis dataset yang mencakup data produksi dari berbagai negara dan komoditas selama beberapa tahun. Dengan dataset ini, SQL digunakan untuk:
+
+### Mengubah dan Menyesuaikan Struktur Data:
+- Membersihkan data dengan menyesuaikan tipe data pada kolom tertentu agar lebih konsisten untuk analisis lanjutan.
+- Memastikan kompatibilitas tipe data dengan kebutuhan analisis statistik dan visualisasi.
+ ### Melakukan Analisis Produksi Pangan:
+- Menghitung rata-rata produksi: Untuk setiap komoditas di berbagai negara selama periode waktu tertentu.
+- Mengidentifikasi tren produksi: Analisis pertumbuhan produksi komoditas tertentu di negara tertentu dari waktu ke waktu.
+- Mencari produksi tertinggi: Mengidentifikasi negara dengan produksi tertinggi untuk komoditas tertentu.
+
 ## Dataset
 https://www.kaggle.com/datasets/rafsunahmad/world-food-production
 
